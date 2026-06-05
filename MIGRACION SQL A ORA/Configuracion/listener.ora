@@ -1,0 +1,32 @@
+SID_LIST_LISTENER =
+  (SID_LIST =
+    (SID_DESC =
+      (SID_NAME = CLRExtProc)
+      (ORACLE_HOME = C:\app\oracle19.3\dbhome)
+      (PROGRAM = extproc)
+      (ENVS = "EXTPROC_DLLS=ONLY:C:\app\oracle19.3\dbhome\bin\oraclr19.dll")
+    )
+    (SID_DESC =
+      (GLOBAL_DBNAME = INSTACART)
+      (ORACLE_HOME = C:\app\oracle19.3\dbhome)
+      (SID_NAME = INSTACART)
+    )
+    (SID_DESC =
+      (GLOBAL_DBNAME = pdbOrders)
+      (ORACLE_HOME = C:\app\oracle19.3\dbhome)
+      (SID_NAME = INSTACART)
+    )
+    (SID_DESC =
+      (SID_NAME = dg4odbc)
+      (ORACLE_HOME = C:\app\oracle19.3\dbhome)
+      (PROGRAM = dg4odbc)
+    )
+  )
+
+LISTENER =
+  (DESCRIPTION_LIST =
+    (DESCRIPTION =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = 192.168.10.20)(PORT = 1521))
+      (ADDRESS = (PROTOCOL = IPC)(KEY = EXTPROC1521))
+    )
+  )
